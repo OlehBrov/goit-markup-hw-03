@@ -1,0 +1,177 @@
+:root {
+  --main-text-color: #212121;
+  --nav-color: #2196f3;
+  --advantages-paragraph: #757575;
+  --footer-bgc: #2f303a;
+  --contacts-color: #757575;
+  --white-text: #ffffff;
+  --black: #000000;
+  --team-section-style: #f5f4fa;
+  --products-bgc: #f5f5f5;
+  --hero-bgc: #2F303A;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+
+header {
+  background-color: var(--white-text);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--nav-color);
+}
+
+.header-studio-word {
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.footer-studio-word {
+  line-height: 1.2;
+  color: var(--white-text);
+}
+
+.nav-link {
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--nav-color);
+}
+.hero-section {
+  background-color: var(--hero-bgc)
+}
+
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.booking-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-text);
+  background-color: var(--nav-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.06em;
+}
+
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.advantage-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--advantages-paragraph);
+  letter-spacing: 0.03em;
+}
+
+.section-header {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.our-team {
+  background-color: var(--team-section-style);
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.job-title {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--advantages-paragraph);
+}
+
+footer {
+  background-color: var(--footer-bgc);
+}
+
+.adress-link {
+  color: var(--white-text);
+  font-style: normal;
+}
+
+.contact-link {
+  color: var(--contacts-color);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  color: var(--nav-color);
+}
+
+.footer-contacts {
+  line-height: 1.7;
+}
+
+.filter-btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--main-text-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--nav-color);
+  color: var(--white-text);
+  border: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.product-descr {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--advantages-paragraph);
+}
