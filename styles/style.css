@@ -95,16 +95,19 @@ body {
 .nav-link.active {
   color: var(--nav-color);
 }
-.link-ul>li:not(:first-child){
-margin-left: 50px;
+.header-item:not(first-child) {
+margin-right: 50px;
 }
 .contacts-links {
-  margin-left: 344px;
+  margin-left: auto;
+  align-items: center;
 }
 .contact-link {
   display: block;
 }
-
+.phone-number {
+  margin-left: 50px;
+}
 
 .footer-studio-word {
   line-height: 1.2;
@@ -206,20 +209,27 @@ text-align: center;
 /* Team section */
 .our-team {
   background-color: var(--team-section-style);
-}
-.team-container {
   padding: 94px 0;
 }
+
 .team-members {
   display: flex;
-  gap: 0 30px;
+  
 
 }
+.member {
+  width: calc(100% / 4);
+}
+.member:not(:first-child){
+  margin-left: 30px;
+}
+
 .team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 .job-title {
@@ -227,6 +237,7 @@ text-align: center;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--advantages-paragraph);
+  display: block;
 }
 
 footer {
