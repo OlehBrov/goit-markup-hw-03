@@ -338,7 +338,7 @@ PORTFOLIO PAGE
 .products-table{
   padding-top: 34px;
   padding-bottom: 94px;
-  flex-shrink: 9;
+  flex-wrap: wrap;
 }
 .products{
   display: flex;
