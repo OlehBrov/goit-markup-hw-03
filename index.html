@@ -16,7 +16,7 @@
     <title>Студія WebStudio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <div class="studio-logo">
           <a href="./index.html" class="link logo"
@@ -25,14 +25,16 @@
         </div>
         <div class="main-navigation">
           <nav class="main-nav">
-            <ul class="list link-ul pages-nav">
+            <ul class="list link-ul">
               <li class="header-item">
                 <a href="./index.html" class="link nav-link active">Студія</a>
               </li>
               <li class="header-item">
                 <a href="./portfolio.html" class="link nav-link">Портфоліо</a>
               </li>
-              <li class="header-item"><a href="#" class="link nav-link">Контакти</a></li>
+              <li class="header-item">
+                <a href="#" class="link nav-link">Контакти</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -43,8 +45,8 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li  class="contact-item">
-              <a href="tel:+380961111111" class="link contact-link phone-number"
+            <li class="contact-item">
+              <a href="tel:+380961111111" class="link contact-link"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -73,8 +75,8 @@
         </div>
       </section>
       <!-- Переваги компанії -->
-      <section>
-        <div class="container advantages">
+      <section class="advantages">
+        <div class="container">
           <h2 hidden>Наші переваги</h2>
           <ul class="advantages-list list">
             <li class="advantage-item">
@@ -108,11 +110,11 @@
         </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section>
-        <div class="container our-jobs">
-          <h2 class="section-header">Чим ми займаємося</h2>
+      <section class="our-jobs">
+        <div class="container">
+          <h2 class="our-jobs-header">Чим ми займаємося</h2>
           <ul class="list jobs-container">
-            <li>
+            <li class="jobs-item">
               <a href="#">
                 <img
                   src="./images/what_we_do_1.jpg"
@@ -121,7 +123,7 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="jobs-item">
               <a href="#">
                 <img
                   src="./images/what_we_do_2.jpg"
@@ -130,7 +132,7 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="jobs-item">
               <a href="#">
                 <img
                   src="./images/what_we_do_3.jpg"
@@ -143,74 +145,98 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="our-team">
-        <div class="container team-container">
-          <h2 class="section-header">Наша команда</h2>
+      <section class="team">
+        <div class="container">
+          <h2 class="team-header">Наша команда</h2>
           <ul class="team-members list">
             <li class="member">
-              <img
-                src="./images/product_designer.jpg"
-                alt="чоловік в окулярах, з бородою"
-                width="270"
-              />
-              <h3 class="team-member">Ігор Дем'яненко</h3>
-              <p class="job-title">Product Designer</p>
+              <div class="team-photo">
+                <img
+                  src="./images/product_designer.jpg"
+                  alt="чоловік в окулярах, з бородою"
+                  width="270"
+                />
+              </div>
+              <div class="team-worker">
+                <h3 class="team-member">Ігор Дем'яненко</h3>
+                <p class="job-title">Product Designer</p>
+              </div>
             </li>
             <li class="member">
-              <img
-                src="./images/frontend_dev.jpg"
-                alt="блондинка в діловому костюмі і в окулярах"
-                width="270"
-              />
-              <h3 class="team-member">Ольга Рєпіна</h3>
-              <p class="job-title">Frontend Developer</p>
+              <div class="team-photo">
+                <img
+                  src="./images/frontend_dev.jpg"
+                  alt="блондинка в діловому костюмі і в окулярах"
+                  width="270"
+                />
+              </div>
+              <div class="team-worker">
+                <h3 class="team-member">Ольга Рєпіна</h3>
+                <p class="job-title">Frontend Developer</p>
+              </div>
             </li>
             <li class="member">
-              <img
-                src="./images/marketing.jpg"
-                alt="чоловік в білій сорочці, посміхається"
-                width="270"
-              />
-              <h3 class="team-member">Микола Тарасов</h3>
-              <p class="job-title">Marketing</p>
+              <div class="team-photo">
+                <img
+                  src="./images/marketing.jpg"
+                  alt="чоловік в білій сорочці, посміхається"
+                  width="270"
+                />
+              </div>
+              <div class="team-worker">
+                <h3 class="team-member">Микола Тарасов</h3>
+                <p class="job-title">Marketing</p>
+              </div>
             </li>
             <li class="member">
-              <img
-                src="./images/ui_designer.jpg"
-                alt="чоловік в темній футболці, в окулярах і з бородою"
-                width="270"
-              />
-              <h3 class="team-member">Михайло Єрмаков</h3>
-              <p class="job-title">UI Designer</p>
+              <div class="team-photo">
+                <img
+                  src="./images/ui_designer.jpg"
+                  alt="чоловік в темній футболці, в окулярах і з бородою"
+                  width="270"
+                />
+              </div>
+              <div class="team-worker">
+                <h3 class="team-member">Михайло Єрмаков</h3>
+                <p class="job-title">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <a href="index.html" class="link logo"
-          >Web<span class="footer-studio-word">Studio</span></a
-        >
+        <div class="footer-logo">
+          <a href="index.html" class="link logo"
+            >Web<span class="footer-studio-word">Studio</span></a
+          >
+        </div>
         <address>
-          <ul class="footer-contacts list">
-            <li>
-              <a
-                href="https://goo.gl/maps/CVqLnx5TvELweERi6"
-                target="_blank"
-                class="link adress-link"
-                >Київ, пр-т Лесі Українки, 26</a
-              >
+          <ul class="list">
+            <li class="footer-list">
+              <div class="footer-contact">
+                <a
+                  href="https://goo.gl/maps/CVqLnx5TvELweERi6"
+                  target="_blank"
+                  class="link adress-link"
+                  >Київ, пр-т Лесі Українки, 26</a
+                >
+              </div>
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link contact-link"
-                >info@devstudio.com</a
-              >
+            <li class="footer-list">
+              <div class="footer-contact">
+                <a href="mailto:info@devstudio.com" class="link contact-link"
+                  >info@devstudio.com</a
+                >
+              </div>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="link contact-link"
-                >+38 096 111 11 11</a
-              >
+            <li class="footer-list">
+              <div class="footer-contact">
+                <a href="tel:+380961111111" class="link contact-link"
+                  >+38 096 111 11 11</a
+                >
+              </div>
             </li>
           </ul>
         </address>

@@ -8,7 +8,7 @@
   --black: #000000;
   --team-section-style: #f5f4fa;
   --products-bgc: #f5f5f5;
-  --hero-bgc: #2F303A;
+  --hero-bgc: #2f303a;
 }
 h1,
 h2,
@@ -24,7 +24,6 @@ ul {
   padding-left: 0;
 }
 
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -34,14 +33,12 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
-  /* Header */
-  header {
+/* Header */
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: var(--white-text);
-  outline: 1px solid tomato;
 }
 .header-studio-word {
   line-height: 1.2;
@@ -80,7 +77,6 @@ body {
 .studio-logo {
   display: block;
   margin-right: 93px;
-  outline: 1px solid green;
 }
 .nav-link {
   color: var(--main-text-color);
@@ -96,7 +92,7 @@ body {
   color: var(--nav-color);
 }
 .header-item:not(first-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
 .contacts-links {
   margin-left: auto;
@@ -105,13 +101,12 @@ margin-right: 50px;
 .contact-link {
   display: block;
 }
-.phone-number {
-  margin-left: 50px;
-}
-
-.footer-studio-word {
-  line-height: 1.2;
-  color: var(--white-text);
+/* .contact-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+.contact-item:first-child {
+  padding-right: 50px;
 }
 
 
@@ -123,16 +118,15 @@ margin-right: 50px;
   align-items: center;
 }
 .hero-section {
-  background-color: var(--hero-bgc)
+  background-color: var(--hero-bgc);
 }
 .hero-text {
-  
   padding-bottom: 15px;
   max-width: 696px;
 }
 
 .hero-header {
-text-align: center;
+  text-align: center;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -152,28 +146,32 @@ text-align: center;
   background-color: var(--nav-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.06em;
-  height: 50px;
-  width: 216px;
+  padding: 10px 32px;
   border-radius: 4px;
-  border: 0px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
 }
 .order-button {
+  display: flex;
   margin: 0 auto;
-  padding-top: 15px;
-  max-width: 216px;
 }
 
 /* ADVANTAGES SECTION */
+.advantages {
+  padding: 94px 0;
+}
 .advantages-list {
   display: flex;
-  padding: 94px 0;
 }
 .advantage-title {
   margin-bottom: 10px;
 }
-.advantage-item{
+.advantage-item {
   flex-wrap: wrap;
-  gap: 0 30px;
+}
+.advantage-item:not(:first-child) {
+  margin-left: 30px;
 }
 .advantage-title {
   font-weight: 700;
@@ -181,6 +179,7 @@ text-align: center;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
 .advantage-text {
@@ -191,37 +190,50 @@ text-align: center;
 }
 
 /* What we do section */
-.our-jobs{
-  padding-bottom: 50px;
+.our-jobs {
+  padding-bottom: 94px;
 }
-.section-header {
+.our-jobs-header {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
   display: block;
-  
 }
 .jobs-container {
   display: flex;
-  gap: 0 30px;
+  width: calc((100%-60px) / 3);
 }
+.jobs-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 /* Team section */
-.our-team {
+.team {
   background-color: var(--team-section-style);
   padding: 94px 0;
 }
-
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
 .team-members {
   display: flex;
-  
+  width: calc((100%-90px) / 4);
+}
 
-}
-.member {
-  width: calc(100% / 4);
-}
-.member:not(:first-child){
+.member:not(:first-child) {
   margin-left: 30px;
+}
+
+.team-worker {
+  text-align: center;
+  padding: 30px 10px;
 }
 
 .team-member {
@@ -229,7 +241,8 @@ text-align: center;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  display: block;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 .job-title {
@@ -237,11 +250,27 @@ text-align: center;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--advantages-paragraph);
-  display: block;
+  margin-top: 5px;
+}
+/* FOOTER */
+.footer-studio-word {
+  line-height: 1.2;
+  color: var(--white-text);
+}
+.footer {
+  background-color: var(--footer-bgc);
+  padding: 60px 0;
+}
+.footer-logo{
+  margin-bottom: 20px;
 }
 
-footer {
-  background-color: var(--footer-bgc);
+
+.footer-contact{
+  display: block;
+}
+.footer-list:not(:last-child){
+margin-bottom: 9px;
 }
 
 .adress-link {
@@ -257,10 +286,6 @@ footer {
 
 .contact-link:hover {
   color: var(--nav-color);
-}
-
-.footer-contacts {
-  line-height: 1.7;
 }
 
 .filter-btn {
