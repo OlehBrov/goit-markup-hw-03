@@ -313,6 +313,8 @@ PORTFOLIO PAGE
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding: 6px 22px;
   display: block;
+}
+.filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -327,11 +329,36 @@ PORTFOLIO PAGE
   cursor: pointer;
 }
 
+/* На лекції говорилося про необхідність цього падінгу для естетичного 
+відображення, але з ним не вдається точно відтворити макет */
+.products-section{
+  padding: 0;
+}
+
+.products-table{
+  padding-top: 34px;
+  padding-bottom: 94px;
+  flex-shrink: 9;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.product-item {
+  margin: 15px;
+}
+.product-text{
+  border: 1px solid #EEEEEE;
+  border-top: 0;
+  margin: 20px 24px;
+}
 .product-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 2px;
 }
 
 .product-descr {
@@ -339,5 +366,6 @@ PORTFOLIO PAGE
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--advantages-paragraph);
+  margin-top: 2px;
 }
 
