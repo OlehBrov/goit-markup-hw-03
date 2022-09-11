@@ -329,12 +329,6 @@ PORTFOLIO PAGE
   cursor: pointer;
 }
 
-/* На лекції говорилося про необхідність цього падінгу для естетичного 
-відображення, але з ним не вдається точно відтворити макет */
-.products-section{
-  padding: 0;
-}
-
 .products-table{
   padding-top: 34px;
   padding-bottom: 94px;
@@ -343,11 +337,11 @@ PORTFOLIO PAGE
 .products{
   display: flex;
   flex-wrap: wrap;
- 
+  gap: 30px;
+  justify-content: center;
 }
-.product-item {
-  margin: 15px;
-}
+
+
 .product-text{
   border: 1px solid #EEEEEE;
   border-top: 0;
