@@ -69,7 +69,6 @@ body {
 }
 .main-nav {
   align-items: center;
-  margin-right: auto;
 }
 
 .logo {
@@ -185,7 +184,7 @@ body {
 
 /* What we do section */
 .jobs-section {
-  padding: 94px 0;
+  padding-bottom: 94px;
 }
 .our-jobs-header {
   font-size: 36px;
@@ -205,7 +204,7 @@ body {
 /* Team section */
 .team-section {
   background-color: var(--team-section-style);
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .team-header {
   font-weight: 700;
@@ -316,7 +315,7 @@ PORTFOLIO PAGE
   background: var(--team-section-style);
   border-radius: 4px;
   border: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ 
   padding: 6px 22px;
   display: block;
 }
@@ -330,6 +329,7 @@ PORTFOLIO PAGE
   background-color: var(--nav-color);
   color: var(--white-text);
   border: none;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button {
